@@ -1,20 +1,55 @@
-.top-nav {
+/* <!-- W3c has an html & css validator. I used it to check my syntax!
+https://jigsaw.w3.org/css-validator/ */
+
+a{
+    color: inherit; 
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+} /* what this does is it makes the box sizes pre-specified. */
+
+ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
     display: flex;
-    padding: 0rem;
-    margin-left: 2rem;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
 
-h1 {
-    display: inline-flex;
-    width: 70%;
+header ul {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
 }
 
-h1 .bolded-font {
-    font-weight: bolder;
+header ul a {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
 }
 
-h1 .top-nav {
-    display: inline-flex;
+header ul a:hover {
+    color: #d6a419;
+    background-color: #34495e;
+
+}
+
+header ul a.current {
+    background-color: #34495e;
+}
+.logo{
+    font-size: 30px;
+    font-family: monospace;
+}
+.two-slashes{
+    color:#d6a419;
 }
