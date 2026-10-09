@@ -1,0 +1,21 @@
+.top-nav {
+    list-style-type: none;
+    display: flex;
+    padding: 0rem;
+    margin-left: 2rem;
+    gap: 2rem;
+}
+
+h1 {
+    display: inline-flex;
+    width: 70%;
+}
+
+h1 .bolded-font {
+    font-weight: bolder;
+}
+
+h1 .top-nav {
+    display: inline-flex;
+
+}
