@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>COMP3612 Assign 1</title>
+    <link rel = "stylesheet" href = "a1-styles.css">
+</head>
+
+<!-- W3c has an html & css validator. I used it to check my syntax!
+https://validator.w3.org/ -->
+<body>
+    <header>
+    <div>
+    <a class = "logo" href = index.html>
+        <span class = "two-slashes">//</span>
+        Comp3612 Assign 1
+    </a>
+    </div>
+    <nav>
+        <ul class = "navigation-bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Cart (0)</a></li>
+
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <div class = "menu">
+            <p> Home > Sweaters > Merino Wool Cable Knit Sweater</p>
+        </div>
+        <div class = "product-front">
+            <section class = "photo-knit-sweater">
+                <img src = "data/images/003-medium-front.png" 
+                alt = "Cable Knit Sweater, view of the front">
+                <section class = "thumbnail-views">
+                    <img src = "data/images/003-thumb-front.png"
+                    alt = "Front view of the Sweater.">
+                    <img src = "data/images/003-thumb-back-angle.png"
+                    alt = "Angled view of Sweater from Back.">
+                    <img src = "data/images/003-thumb-front-angle.png"
+                    alt = "Angled view of Sweater from Front.">
+                </section>
+            </section>
+        <div class = "product-text">
+            <h1>Merino Wool Cable Knit Sweater</h1>
+            <p class = "rating">★★★★★ (4.8/5) - 127 reviews</p>
+            <p class = "item-cost">$290.00</p>
+            <p> This luxurious cable knit sweater is made from 100% Merino Wool.
+                Cable pattern is sweat-wicking, in order to ensure your 96 hour
+                deodorant is really put to work. Temperature regulation properties 
+                make it perfect for transitional seasons. 
+            </p>
+
+            <!-- I followed these YouTube tutorials for forms.
+             https://www.youtube.com/watch?v=frAGrGN00OA - Dave Gray
+            https://www.youtube.com/watch?v=2O8pkybH6po - Bro Code-->
+            
+            <form class = "product-information" 
+            action = "https://www.randyconnolly.com/tests/process.php" method="post">
+                <fieldset class = "sweater-sizes">
+                    <legend>Size: </legend>
+
+                    <input type = "radio" id = "size-xs" name="size" value= "extra-small">
+                    <label for="size=xs">XS</label>
+                    <input type = "radio" id = "size-s" name="size" value= "small">
+                    <label for="size=xs">S</label>
+                    <input type = "radio" id = "size-m" name="size" value= "medium">
+                    <label for="size=xs">M</label>
+                    <input type = "radio" id = "size-l" name="size" value= "large">
+                    <label for="size=xs">L</label>
+                    <input type = "radio" id = "size-xl" name="size" value= "extra-large">
+                    <label for="size=xs">XL</label>
+                    <input type = "radio" id = "size-xxl" name="size" value= "double-extra-large">
+                    <label for="size=xs">XXL</label>
+                </fieldset>
+
+                <fieldset class="sweater-colours">
+                    <legend>Please select a colour:</legend>
+
+                        <input type="radio" id="colour-cream" name="colour" value="cream">
+                        <label for="colour-cream">Muted Frankincense</label>
+
+                        <input type="radio" id="colour-charcoal" name="colour" value="charcoal">
+                        <label for="colour-charcoal">Crematorium Grey</label>
+
+                        <input type="radio" id="colour-navy" name="colour" value="navy">
+                        <label for="colour-navy">Deep Blue Sea</label>
+
+                        <input type="radio" id="colour-burgundy" name="colour" value="burgundy">
+                        <label for="colour-burgundy">Burnt Orange</label>
+                </fieldset>
+
+                <fieldset class="item-amount">
+                    <legend>Amount:</legend>
+                    <input type="number" id="amount" name="amount" min="1" value="1">
+                </fieldset>
+
+                <button type = "Submit">Add to Cart</button>
+                <button type = "Submit">Add to Wishlist</button>
+             </form>
+         </div>
+         </div>
+
+    <section class = "flex-desc">
+        <a href = "#">Description</a>
+        <a href = "#">Specifications</a>
+        <a href = "#">Care Instructions</a>
+
+    </section>
+
+    <!-- I knew how to do this part by myself because I did the grid and flexbox 
+    labs from gumroad. I can show proof if necessary.  -->
+
+    <section class = "detail-product">
+        <h2>Product Details</h2>
+        <p>This luxurious cable knit sweater is made from 100% Merino Wool. 
+            Cable pattern is sweat-wicking, in order to ensure your 96 hour
+            deodorant is really put to work. Temperature regulation properties
+            make it perfect for transitional seasons.</p>
+        <h3>Key Features:</h3>
+        <section class = "grid-of-features">
+            <div class = "grid-box">
+                <p>Material</p>
+                <p>100% Premium Merino Wool</p>
+            </div>
+            <div class = "grid-box">
+                <p>Style</p>
+                <p>Classic Cable-Knit Pattern</p>
+            </div>
+            <div class = "grid-box">
+                <p>Closures</p>
+                <p>Ribbed cuffs and hem</p>
+            </div>
+            <div class = "grid-box">
+                <p>Care</p>
+                <p>Dry Cleaning Recommended</p>
+            </div>
+        </section>
+    </section>
+    <section class = "sweater-reviews">
+        <h2> Customer Reviews</h2>
+        <p class="rating">★★★★★</p>
+            <time datetime="2024-08-18">August 18, 2024</time>
+            <p>Absolutely stunning sweater! The merino wool is incredibly soft 
+                and the cable knit detail is beautiful. Worth the investment.</p>
+    </section>
+    </main>
+</body>
+</html>
