@@ -6,6 +6,13 @@ a{
     text-decoration: none;
 }
 
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: -5;
+    position: absolute;
+}
+
 * {
     box-sizing: border-box;
 } /* what this does is it makes the box sizes pre-specified. */
@@ -38,13 +45,11 @@ header ul a {
 }
 
 header ul a:hover {
-    color: #d6a419;
-    background-color: #34495e;
-
+    background-color: #34495E;
 }
 
 header ul a.current {
-    background-color: #34495e;
+    background-color: #34495E;
 }
 .logo{
     font-size: 30px;
@@ -52,4 +57,94 @@ header ul a.current {
 }
 .two-slashes{
     color:#d6a419;
+}
+
+/* Header done... LFG(let's FREAKING go). */
+/* all colours attained from using colour dropper.  */
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 52px;
+    background-color: #272D3F;
+    padding-left: 60px;
+    z-index: -3;
+} 
+.hero .brace {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: -50px;
+    font-size: 400px;
+    line-height: 1;
+    color: #303647;
+    z-index: -2;
+}
+/* z index was learned from w3c
+https://www.w3schools.com/css/css_z-index.asp*/
+
+.right-side-brace {
+    right: -20px;
+}
+
+
+.left-side-brace {
+    right: 350px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 415px;
+}
+
+.hero p {
+    color: #A9AEC0;
+    max-width: 530px;
+}
+
+.hero .shop-button {
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: #D6A419   ;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.all-products {
+    padding: 15px;
+    background-color: #F3F4F7;
+}
+.all-products h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+/* card section */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #DCDFE6;
+    border-top: 4px solid #2F6F63;
+    border-radius: 4px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    border: 1px solid black;
+    border-top: 3px solid #D6A419;
 }
