@@ -31,12 +31,12 @@ https://validator.w3.org/ -->
 
     <main>
         <div class = "menu">
-            <p> Home > Sweaters > Merino Wool Cable Knit Sweater</p>
+            <p> Home &gt; Sweaters &gt; Merino Wool Cable Knit Sweater</p>
         </div>
         <div class = "product-front">
             <section class = "photo-knit-sweater">
                 <img src = "data/images/003-medium-front.png" 
-                alt = "Cable Knit Sweater, view of the front">
+                alt = "Cable Knit Sweater view of the front">
                 <section class = "thumbnail-views">
                     <img src = "data/images/003-thumb-front.png"
                     alt = "Front view of the Sweater.">
@@ -66,17 +66,17 @@ https://validator.w3.org/ -->
                     <legend>Size: </legend>
 
                     <input type = "radio" id = "size-xs" name="size" value= "extra-small">
-                    <label for="size=xs">XS</label>
+                    <label for="size-xs">XS</label>
                     <input type = "radio" id = "size-s" name="size" value= "small">
-                    <label for="size=xs">S</label>
+                    <label for="size-s">S</label>
                     <input type = "radio" id = "size-m" name="size" value= "medium">
-                    <label for="size=xs">M</label>
+                    <label for="size-m">M</label>
                     <input type = "radio" id = "size-l" name="size" value= "large">
-                    <label for="size=xs">L</label>
+                    <label for="size-l">L</label>
                     <input type = "radio" id = "size-xl" name="size" value= "extra-large">
-                    <label for="size=xs">XL</label>
+                    <label for="size-xl">XL</label>
                     <input type = "radio" id = "size-xxl" name="size" value= "double-extra-large">
-                    <label for="size=xs">XXL</label>
+                    <label for="size-xxl">XXL</label>
                 </fieldset>
 
                 <fieldset class="sweater-colours">
@@ -91,7 +91,7 @@ https://validator.w3.org/ -->
                         <input type="radio" id="colour-navy" name="colour" value="navy">
                         <label for="colour-navy">Deep Blue Sea</label>
 
-                        <input type="radio" id="colour-burgundy" name="colour" value="burgundy">
+                        <input type="radio" id="colour-burgundy" name="colour" value="orange">
                         <label for="colour-burgundy">Burnt Orange</label>
                 </fieldset>
 
@@ -100,8 +100,8 @@ https://validator.w3.org/ -->
                     <input type="number" id="amount" name="amount" min="1" value="1">
                 </fieldset>
 
-                <button type = "Submit">Add to Cart</button>
-                <button type = "Submit">Add to Wishlist</button>
+                <button type = "submit">Add to Cart</button>
+                <button type = "button">Add to Wishlist</button>
              </form>
          </div>
          </div>
@@ -128,14 +128,17 @@ https://validator.w3.org/ -->
                 <p>Material</p>
                 <p>100% Premium Merino Wool</p>
             </div>
+
             <div class = "grid-box">
                 <p>Style</p>
                 <p>Classic Cable-Knit Pattern</p>
             </div>
+
             <div class = "grid-box">
                 <p>Closures</p>
                 <p>Ribbed cuffs and hem</p>
             </div>
+
             <div class = "grid-box">
                 <p>Care</p>
                 <p>Dry Cleaning Recommended</p>
@@ -144,11 +147,67 @@ https://validator.w3.org/ -->
     </section>
     <section class = "sweater-reviews">
         <h2> Customer Reviews</h2>
-        <p class="rating">★★★★★</p>
-            <time datetime="2024-08-18">August 18, 2024</time>
-            <p>Absolutely stunning sweater! The merino wool is incredibly soft 
-                and the cable knit detail is beautiful. Worth the investment.</p>
+        <section class = "review">
+            <h3> Maria C.</h3>
+            <p class="rating">★★★★★</p>
+                <time datetime="2024-08-18">August 18, 2024</time>
+                <p>Absolutely stunning sweater! The merino wool is incredibly soft 
+                    and the cable knit detail is beautiful. Worth the investment.</p>
+        </section>
+
+        <section class = "review">
+            <h3> Robert H.</h3>
+            <p class="rating">★★★★☆</p>
+            <time datetime="2024-08-12">August 12, 2024</time>
+            <p>Bought this for our lead software engineer and she 
+                loves it. High quality construction and the wool 
+                feels luxurious. Fits true to size.</p>
+        </section>
+
+        <section class = "review">
+            <h3>Nina F.</h3>
+            <p class="rating">★★★★☆</p>
+            <time datetime="2024-07-25">July 25, 2024</time>
+            <p>Beautiful sweater but requires dry cleaning which is 
+                inconvenient. The quality is excellent though and 
+                it's very warm.</p>
+        </section>
     </section>
     </main>
+
+        <footer>
+        <div class = "grid-style-container">
+            <div class = "grid-box">
+                <h2>Customer Service</h2>
+                <ul>
+                    <li><a href = "#">Contact Us</a></li>
+                    <li><a href = "#">Size Guide</a></li>
+                    <li><a href = "#">Returns</a></li>
+                    <li><a href = "#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class = "grid-box">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href = "about.html">About Us</a></li>
+                    <li><a href = "#">Careers</a></li>
+                    <li><a href = "#">Press</a></li>
+                    <li><a href = "#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class = "grid-box">
+                <h2>Connect</h2>
+                <ul>    
+                    <li><a href = "#">Newsletter</a></li>
+                    <li><a href = "#">Facebook</a></li>
+                    <li><a href = "#">Instagram</a></li>
+                    <li><a href = "#">Twitter</a></li>
+                </ul>
+            </div>        
+        </div>
+            <hr>
+            <p>&copy; 2026 COMP3612. All Rights Reserved.</p>
+
+    </footer>
 </body>
 </html>
