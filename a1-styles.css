@@ -139,8 +139,8 @@ https://www.w3schools.com/css/css_z-index.asp*/
     border: 1px solid #DCDFE6;
     border-top: 4px solid #2F6F63;
     border-radius: 4px;
-    min-height: 400px;
     display: flex;
+    min-height: 400px;
     flex-direction: column;
 }
 
@@ -148,3 +148,32 @@ https://www.w3schools.com/css/css_z-index.asp*/
     border: 1px solid black;
     border-top: 3px solid #D6A419;
 }
+
+.card img {
+    background-color: #F3F4F7;
+    display: block; 
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.card .button {
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-top: 15px;
+}
+.card .button:hover {
+    background-color: black;
+    color: white;
+}
+.card .item-cost {
+    color: #A9AEC0;
+    padding: 5px;
+    font-size: 14px;
+}   
