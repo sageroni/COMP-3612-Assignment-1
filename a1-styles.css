@@ -410,8 +410,86 @@ footer p{
     padding-bottom:30px;
 }
 .our-journey h2 {
-    font-family: "Source Serif 4", Georgia, serif;
+    font-family: Georgia, serif;
     font-size: 30px;
     text-align: center;
 }
 
+.our-journey ol {
+    list-style: none;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 0 0 30px;
+}
+
+.our-journey ol::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: #dcdfe6;
+}
+
+.our-journey li {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.our-journey li::after {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d6a419;
+    z-index: 1;
+    box-shadow: 0 0 0 2px #FFF, 0 0 0 4px #DCDFE6;
+    /* https://www.w3schools.com/howto/howto_css_circles.asp */
+}
+
+.our-journey .era {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    color: #2f6f63;
+    margin-bottom: 3px;
+}   
+
+.our-journey p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.contact {
+    background-color: #F3F4F7;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.contact h2 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 40px;
+}
+
+.contact-boxes {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-box {
+    background-color: #FFFFFF;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    margin-top: 0px;
+}
