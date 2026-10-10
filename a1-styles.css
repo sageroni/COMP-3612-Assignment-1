@@ -134,8 +134,7 @@ https://www.w3schools.com/css/css_z-index.asp*/
 }
 
 .card {
-    background-color: #FFFFFF;
-    padding: 20px;
+    background-color: #F3F4F7;
     border: 1px solid #DCDFE6;
     border-top: 4px solid #2F6F63;
     border-radius: 4px;
@@ -152,10 +151,11 @@ https://www.w3schools.com/css/css_z-index.asp*/
 .card img {
     background-color: #F3F4F7;
     display: block; 
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 50px;
+    /* max-width: 100%;
+    size: auto; */
+    padding: 20px;
 }
+
 .card .button {
     color: black;
     border: 1px solid black;
@@ -166,7 +166,10 @@ https://www.w3schools.com/css/css_z-index.asp*/
     font-size: 14px;
     background-color: #FFFFFF;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
 }
 .card .button:hover {
     background-color: black;
@@ -176,4 +179,16 @@ https://www.w3schools.com/css/css_z-index.asp*/
     color: #A9AEC0;
     padding: 5px;
     font-size: 14px;
-}   
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.card h3 {
+    margin-left: 15px;
+}
+
+.figcaption {
+    background-color: white;
+    display: block;
+    padding: 0%;
+}
