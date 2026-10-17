@@ -339,9 +339,9 @@ footer p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    max-width: 600px;
+    max-width: 100vw;
     padding-left: 50px;
-    align-content: center;
+    justify-content: center;
 }
 .our-values h3 {
     padding-bottom: 10px;
@@ -351,7 +351,7 @@ footer p{
     border: 1px solid #dcdfe6;
     border-radius: 4px;
     padding: 15px;
-    max-width: 150px;
+    max-width: 200px;
 }
 
 .value-icon {
@@ -395,6 +395,7 @@ footer p{
     padding-bottom: 50px;
     padding-left: 20px;
     padding-right:20px;
+    justify-content: center;
 }
 .meet-our-team h2 {
     font-size: 24px;
@@ -408,8 +409,9 @@ footer p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 650px;
+    max-width: 700px;
     padding: 0 50px 0 50px;
+    justify-content: center;
 }
 .team-member img{
     width: 100%;
